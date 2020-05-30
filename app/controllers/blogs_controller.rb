@@ -12,7 +12,7 @@ class BlogsController < ApplicationController
 
   def create
     blogs = Blog.new(blog_params)
-    blog.save
+    blogs.save
     redirect_to blogs_path
   end
 
