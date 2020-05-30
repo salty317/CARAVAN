@@ -4,6 +4,7 @@ class BlogsController < ApplicationController
   end
 
   def show
+    @blog = Blog.fing(params[:id])
   end
 
   def new
